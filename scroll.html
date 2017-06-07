@@ -1,0 +1,141 @@
+<div ui-content-for="title">
+  <span>Alan Turing</span>
+</div>
+
+<div class="scrollable">
+  <div class="scrollable-content">
+    <div class="section">
+      <div class="panel-group" 
+        
+        ui-shared-state="myAccordion" 
+        ui-default='0'>
+
+        <div class="panel panel-default" ng-repeat="i in [1]">
+          <div class="panel-heading" ui-set="{'myAccordion': i}">
+        
+            <h4 class="panel-title">
+                Quem foi Alan Turing?
+            </h4>
+          </div>
+
+          <div ui-if="myAccordion == {{i}}">
+            <div class="panel-body">
+              <p>
+                Alan Turing (1912-1954), foi um matemático britânico, que foi um dos pioneiros
+da computação, também considerado o “pai da ciência computacional” e da
+inteligência artificial. Nascido na cidade de Paddington, na Inglaterra, no dia 23 de
+junho de 1912, filho e Julius Mathison, funcionário do Serviço Civil Indiano e de Ethel
+Sara Stoney teve uma infância rígida e estudou na tradicional escola Sherbourne, no
+qual desde cedo demonstrou interesse pelas ciências e lógica matemática.
+Aos 15 anos Alan Turing já resolvia problemas matemáticos complexos, sem ao
+menos ter estudado qualquer tipo de calculo avançado para tais exercícios. Desde
+jovem sentia atração por homens, descobrindo-se homossexual. Em 1931 Turing se
+graduou em Matemática com honras pela Universidade de Cambridge.
+Sendo assim se dedicando para criar uma máquina automatizada que
+representaria a lógica humana e conseguisse solucionar problemas matemáticos
+apresentados como forma de algoritmos, no qual seria recebido como formato de
+instruções a serem processadas de forma mecânica dentro da própria máquina.
+Denominada então de “Máquina de Turing” o qual se tornou o protótipo dos
+computadores modernos.
+Alan Turing trabalhou para o governo durante a segunda guerra mundial, na qual
+utilizaria sua “Máquina de Turing” para tentar decifrar códigos nazistas, dando assim
+aos aliados vantagens que permitiu derrotar a Alemanha Nazista.
+Com o fim da guerra Turing trabalhou no Laboratório Nacional de Física do Reino
+Unido, onde pesquisava sobre um projeto para programa de armazenamento de dados,
+conhecido como ACE. Também criou o Manchister 1, basicamente o primeiro
+computador com diretrizes parecidas com as atuais.
+Em 1952, Turing enfrentou processos criminais pela sua opção sexual, no qual na
+época era considerado crime, julgado e destituído de seu posto no Bletchley Park,
+também condenado a castração química com injeções hormonais femininos.
+Alan Turing faleceu com 41 anos por intoxicação de cianeto, no qual de início
+acreditava que ele teria cometido suicídio, porém estudos revelaram que foram os
+remédios no qual os tomava compulsivamente.
+              </p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="panel panel-default" ng-repeat="i in [2]">
+          <div class="panel-heading" ui-set="{'myAccordion': i}">
+        
+            <h4 class="panel-title">
+                Máquina de Turing
+            </h4>
+          </div>
+
+          <div ui-if="myAccordion == {{i}}">
+            <div class="panel-body">
+              <p>
+                <spam>Dispositivo baseado em teoria revolucionária de Alan Turing, concebida aos 24
+anos de idade, a Máquina de Turing formou a estrutura básica para fundamentar a
+ciência da computação moderna e sua computabilidade.
+Essa teoria foi publicada pela primeira vez em 1936, em um artigo titulado como
+“On Computable Numbers, with an Applicaton on the Entscheidungsproblem", em
+resposta ao tratamento do problema de decisão de Hilbert.
+Apesar de a máquina não ter sido implementada fisicamente, o processo
+computacional foi explicado matematicamente e comprovado no seu artigo. Turing
+explicitou um dispositivo lógico que ele o chamou de “automatic machine” (ou “amachine”),
+no qual era capaz de escrever e apagar números binários em uma fita de
+comprimento ilimitado e divida em quadrados de igual tamanho. Possuía também
+uma cabeça de leitura/gravação no qual se movimentaria em qualquer direção ao
+longo da fita lendo um quadrado por vez. A interpretação era realizada por uma
+unidade de controle que recebia de uma lista de instruções simples, movendo-a para
+direita ou esquerda. A regra executada determina o que se convencionou chamar de
+estado de máquina. A Figura 1 demonstra um exemplo mais simplório de seu
+funcionamento.</spam>
+                <p><img src="./img/mtimg.png"/></p>
+                <spam>O seu conceito é semelhante a uma fórmula matemática, sendo assim há
+uma infinidade de possíveis máquinas de Turing, cada uma correspondendo a um
+método definido ou algoritmo.
+Turing propôs que cada algoritmo recebido com um conjunto de instruções
+finito bem definidos, pudesse interpretar e executar o processo mecânico de sua
+máquina.
+Formalmente Turing definiu que uma máquina contém:
+a) Um conjunto finito de estados Q com um estado inicial distinto;
+b) Um conjunto finito de símbolos Σ.
+Essa interpretação de execução dos algorítimos, são realizadas por estados e
+uma função de transição determinando o novo conteúdo da fita. Desde modo por
+restrição imposta pelo algoritmo, pode-se alterar o conteúdo de apenas um
+quadrado por vez, ou movimentar a cabeça no máximo uma célula em qualquer
+direção. Também é permitido a utilização de qualquer conjunto finito de símbolos
+para o alfabeto Σ, mesmo que a definição tenha insistido em Σ = {0,1}. Esta
+mudança não tem impacto sobre a definição de conjunto de função computável pela
+máquina.
+O que efetivamente torna a máquina de Turing funcional é a sua tabela de
+regras de transição no qual compõe o programa da máquina em um determinado
+estado inicial. Um conjunto de instruções conhecidas e processadas pelo módulo de
+controle finito, ilustrado na Figura 1, é relacionado abaixo:
+a) Imprima 0 no quadrado que passa pela cabeça;
+b) Imprima 1 no quadrado que passa pela cabeça;
+c) Vá um quadro para a esquerda;
+d) Vá um quadro para a direita;
+e) Vá para o passo i se o quadrado que passa pela cabeça contém 0;
+f) Vá para o passo j se o quadrado que passa pela cabeça contém 1;
+g) Pare
+Uma computação pode ser representada por três estados, nomeado de
+X0,X1,X2 e com algumas restrições formalizadas no Algoritmo 1:</spam>
+                <p><img src="./img/algimg.png"/></p>
+<spam>Algoritmo 1:Exemplo de instruções entre três estados X0,X1 e X2.
+As duas primeiras instruções (linha 1 e 2) descrevem o que acontecerá no
+estado X0. Existem duas possibilidades: a primeira, a máquina faz sua leitura de um
+dígito '1', movimentará a cabeça para direita e permanecerá no estado X0. Na
+segunda, se for lido um dígito '0' a máquina deixará o estado X0, e entrará no estado
+X1 e escreverá o dígito '1' nessa transição.
+As transições descritas nas linhas 3 e 4 demonstram o que acontecerá com o
+estado X1. Se ele for lido o dígito '0', a cabeça será movimentada para a direita e a
+máquina passará par ao estado X2, como não há instruções definidas pelo algoritmo
+no estado X2, a máquina parará a sua execução, (condição de parada), ao atingir
+esse estado.
+Para que se visualize de uma forma mais explicativa, se utiliza o diagrama de
+estados no qual é representado na Figura 2.
+Figura 2: Diagrama de Estado representativo do Alg1</spam>
+                <p><img src="./img/alg1.png"/></p>
+              </p>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
